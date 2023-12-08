@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>currency-conversion-tool</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">4Q6XH4VTCPMP-538263349-226</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">53e21d03-5ba4-4cb6-bdc3-8185c601d0c4</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://ensembleus.ent.cgi.com/business/86056/_layouts/15/DocIdRedir.aspx?ID=4Q6XH4VTCPMP-538263349-226, 4Q6XH4VTCPMP-538263349-226</mso:_dlc_DocIdUrl>
+<mso:Associated_x0020_Training_x0020_Course msdt:dt="string">12</mso:Associated_x0020_Training_x0020_Course>
+<mso:Subgroup msdt:dt="string">Technical Training Resource</mso:Subgroup>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+    <h1>
+        jQuery Project by
+        <span id="your-name-here">{Set your name here via jQuery}</span>
+    </h1>
+
+    <div id="steps">
+        <div id="step1">
+            <h2>Step 1</h2>
+            <form class="form-horizontal">
+                <fieldset class="form-group">
+                    <label class="col-sm-2 control-label">Date</label>
+                    <div class="col-sm-10">
+                        <input id="dateInput" type="date" name="date" />
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+                        <button id="urlBtn" class="btn btn-default">Generate URL</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="step2">
+            <h2>Step 2</h2>
+            <form class="form-horizontal">
+                <fieldset class="form-group">
+                    <label class="col-sm-2 control-label">URL</label>
+                    <div class="col-sm-10">
+                        <input id="urlInput" type="text" name="url" />
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+                        <button id="downloadBtn" class="btn btn-default">Download</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="step3">
+            <h2>Step 3</h2>
+            <form class="form-horizontal">
+                <fieldset class="form-group">
+                    <label class="col-sm-2 control-label">JSON</label>
+                    <div class="col-sm-10">
+                        <textarea id="jsonText" name="json"></textarea>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+                        <button id="tableBtn" class="btn btn-default">Generate Table</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="step4">
+            <h2>Step 4</h2>
+            <form class="form-inline">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Rate</th>
+                            <th>Amount</th>
+                            <th>Calculate</th>
+                        </tr>
+                    </thead>
+                    <tbody class="step4-template">
+                        <tr class="currency-row">
+                            <td class="currency-column">USD</td>
+                            <td class="rate-column">1.00</td>
+                            <td class="amount-column">
+                                <input id="amountInputUSD" type="text" class="form-control amount-field" value="100.00" />
+                            </td>
+                            <td class="calculate-column">
+                                <button class="btn btn-default calculate-button">Calculate</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="step4-body">
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="your-script.js"></script>
+</body>
+
+</html>
